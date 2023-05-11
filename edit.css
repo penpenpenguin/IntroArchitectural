@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+/*ID CLASS*/
+.wrapper {
+	flex-grow: 1; 
+	max-height: 73%;
+}
+
+#home{
+	display: block;
+	margin: 70px;
+}
+
+/*項目設計*/
+img{
+	border-radius: 10px;
+	float: top;
+	
+}
+
+/*框架*/
+body, html{
+	height: 100%;
+  	margin: 0;
+	padding: 0;
+}
+
+body{
+
+	display: flex;
+	flex-direction: column;
+	background-color: #FFF6E3;
+	font-family: ‘cwTeXYen’, ‘Arial’, sans-serif;
+}
+
+nav{
+	min-width: 40%;
+	text-align: center;
+	margin: 5% auto;
+}
+
+nav ul{
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+	margin: auto 20px;
+	float: none;
+	white-space: nowrap;
+	width: 120px;
+	text-align: center;
+}
+
+nav ul li a{
+	display: block;
+	padding: 0 10px;
+	text-decoration: none;
+	color: #eee;
+	line-height: 30px;
+	font-size: 20px;
+	background-color: #000;
+	border-radius: 6px;
+}
+
+nav ul li ul a {
+	background-color: #46485473;
+}
+
+nav a:hover {/*整個選單連結滑鼠移上去時的樣式*/
+	color: #FFF;
+	background-color: #555;
+	transition: all .2s;
+}
+
+nav ul ul {/*第一層子選單展開*/
+	position: absolute;
+	transition-property: transform;
+	transition-duration: 20ms;
+	transition-timing-function: ease-in;
+	transition-delay: 200ms;
+	transform: scale(1,0);
+	transform-origin: top center;
+}
+nav ul li:hover>ul {/*選單滑鼠移上去的樣式變化*/
+	display: inherit;
+	transition: all 300ms ease;
+	transform: scale(1,1);
+}
+nav ul ul li {/*第一層子選單的樣式*/
+	min-width: 170px;
+	display: list-item;
+	position: relative;
+}
+
+
+footer{
+	background-color: #E0E8C1;
+	text-align: center;
+
+}
+
+
+footer li {
+    display: inline;
+	padding-right: 1px;
+	color: #783e3e;
+}
+
+@media (max-width:960px) {
+	main{
+		flex-wrap:wrap;
+	}
+
+	div{
+		text-align: center;
+		margin-top: 40px;
+	}
+
+	img{
+		max-width: 80%;
+		height: auto;
+		margin: 0 auto;
+	}
+
+	nav{
+		max-width: 30%;
+		padding-top: 20px;
+	}
+
+	nav ul li{
+		margin-top: 20px;
+	}
+
+	
+	
+}
+
+@media (max-width:500px) {
+}
+
+

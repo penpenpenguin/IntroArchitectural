@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Log In</title>
+	<link rel="stylesheet" href="page.css">
+</head>
+
+<body>
+	<header>
+		<div>
+			<img id="logo" src="picture/logo.jpg" alt="LOGO">
+		</div>
+		<nav>
+			<ul>
+				<li><b><a href="Architectural design.html">Home</a></b></li>
+				<li><b><a href="#">Design</a></b>
+					<ul>
+						<li><b><a href="ForestEncounter.html">Forest Encounter</a></b></li>
+					</ul>
+				</li>
+				<li><b><a href="login.html">Log In</a></b></li>
+				<li><b><a href="aboutUs.html">About Us</a></b></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<main>
+		<article id="form">
+			<form action="Architectural design.html">
+				<fieldset>
+					<legend>個人資料</legend>
+					<label for="txt_name">姓名：</label>
+					
+					<input type="text" name="name" title="請輸入您的姓名" required><br>
+					
+					<label for="txt_birth">生日：</label>
+					<input type="date" name="birthday" required><br>
+
+					<label for="option_sex">性別：</label>
+					<select name="sex" required>
+						<option value="male">男</option>
+						<option value="female">女</option>
+					</select><br>
+
+					<label for="option_bloodType">血型：</label>
+					<select required>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="AB">AB</option>
+						<option value="O">O</option>
+					</select><br>
+
+					<label for="txt_ID">身份證字號：</label>
+					<input type="text" required pattern="[a-zA-Z]\d{9}"><br>
+				
+					<label for="txt_phone">手機號碼：</label>
+					<input type="text" name="phone" required pattern="09\d{8}"><br>
+
+					<label for="txt_mail">E-mail：</label>
+					<input type="text" name="mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+			
+				</fieldset>
+			
+				<fieldset  class="AlignRight">
+					<legend>帳號設定</legend>
+					<label for="txt_account">帳號：</label>
+					<input type="text" name="account"><br>
+					<label for="txt_password">密碼：</label>
+					<input type="text" name="password"><br>
+				</fieldset>
+
+				<section>
+					<!--要置右-->
+					<button type="submit">提交</button>
+					<button type="reset">重置</button>
+					<script src="success.js"></script>
+				</section>
+				
+			</form>
+		</article>
+	</main>
+	<aside>
+		
+	</aside>
+	<footer>
+		<ul>
+			<li>Copyright © 2022</li>
+			<li>四資管二</li>
+			<li>B10909059</li>
+			<li>林佳蓁</li>
+		</ul>
+	</footer>
+	
+</body>
+</html>
